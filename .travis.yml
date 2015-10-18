@@ -9,6 +9,8 @@ jdk:
 
 install: 
   - pip install --user sphinx
+  - cd docs
+  - make html  
 
 script: mvn install
 
