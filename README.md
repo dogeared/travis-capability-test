@@ -1,5 +1,7 @@
 # Spring Boot ID Site SSO Demo
 
+[![Build Status](https://api.travis-ci.org/dogeared/travis-capability-test.png?branch=master)](https://travis-ci.org/dogeared/travis-capability-test)
+
 ## You are on the `SpringBootStormpathIDSite` tag
 
 Use the dropdown above to choose a different tag. Available tags are:
