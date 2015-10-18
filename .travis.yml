@@ -10,7 +10,18 @@ jdk:
 install: 
   - pip install --user sphinx
   - cd docs
-  - make html  
+  - make html 
+  - cd ..
+  - git clone git@github.com:dogeared/stormpath.github.io.git  
+  - cd stormpath.github.io
+  - git checkout -b test
+  - cd public/java/servlet-plugin/
+  - cp -p -r ../../../../docs/build/html/* .  
+  - git add -A .
+  - git commit -m "test"
+  - git push origin test
+  - cd   
+
 
 script: mvn install
 
