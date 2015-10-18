@@ -7,7 +7,9 @@ sudo: false
 jdk:
   - oraclejdk8
 
-install: echo "No need to run mvn install -DskipTests then mvn install.  Running mvn install."
+install: 
+  - pip install --user sphinx
+
 script: mvn install
 
 # Stormpath API Key configuration.
